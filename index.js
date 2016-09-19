@@ -51,13 +51,13 @@ module.exports = function leafletImage(map, callback) {
         }
     }
     
-     function drawEsriDynamicLayer(l) {
-        if (!L.esri) return;
+    function drawEsriDynamicLayer(l) {
+         if (!L.esri) return;
         
-        if (l instanceof L.esri.DynamicMapLayer) {                       
+         if (l instanceof L.esri.DynamicMapLayer) {                       
             layerQueue.defer(handleEsriDymamicLayer, l);
         }
-    }
+     }
 
     function done() {
         callback(null, canvas);
