@@ -246,7 +246,7 @@ module.exports = function leafletImage(map, callback) {
             callback(null, {
                 canvas: canvas
             });
-        }
+        };
     }
 
     function addCacheString(url) {
